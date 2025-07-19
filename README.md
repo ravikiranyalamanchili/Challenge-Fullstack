@@ -1,57 +1,45 @@
-#  Clinical‑Trial Matching Take‑Home
+#  Full-Stack Engineer Take‑Home (Clinical‑Trial Matching)
 
-Welcome — your mission is to build a small, end‑to‑end service that matches cancer patients to the most relevant **open clinical trials**, then shows how well the matching works.
+## 0  Overview
+This is a coding challenge designed to test your ability to turn raw oncology data into actionable options for patients and clinicians. In this takehome, you will build a lean service that turns a **patient snapshot** (`data/patients.csv`) into an ordered list of *actively-recruiting* cancer trials and a clear measure of how well that ranking works.  
 
----
+**Heads-up:** the `biomcp` SDK only streams live trial/biomedical data. **It is _not_ a matcher.** Designing the matching logic (rules, ML or LLM) **and** a sound evaluation harness is the real assignment.
+
+
 
 ## 1  Objectives
 
-1. **Trial‑matching workflow**  
-   - Use the open‑source **[biomcp](https://github.com/genomoncology/biomcp)** repo to interpret patient features and query clinical‑trial registries.  
-   - Rank trials by relevance **and** eligibility.
-
-2. **Evaluation & test design** *most important*  
-   - Propose *and implement* a minimal yet rigorous evaluation strategy (e.g., synthetic gold labels, precision/recall, false‑negative analysis).  
-   - Write automated tests that fail clearly when the matcher degrades.
-
-3. **Presentation**  
-   - Expose one simple endpoint or CLI command such that  
+1. **Matching workflow**: Query trials with BioMCP, decide eligibility & relevance, output a ranked list of NCT IDs.  
+2. **Evaluation & test design (primary deliverable)**: E.g., craft metrics, gold labels or synthetic patients, automated tests, false-negative analysis, etc. 
+3. **Interface**: Expose one simple endpoint or CLI command such that  
      ```bash
      python match.py --patient_id P002
      ```  
      returns a ranked list of NCT IDs.
 
----
 
-## 2  Repository layout
 
-| Path | Purpose |
-|------|---------|
-| `data/patients.csv` | Sample dataset (15 records) — please augment or mock more. |
-| `src/` | Your code (Python, TypeScript, any language is fine). |
-| `tests/` | Unit / integration tests & evaluation scripts. |
-| `README.md` | _you are here_ |
+## 2  Repo skeleton
 
----
+data/          # patients.csv (add/augment as you like)
+src/           # your code (language agnostic)
+tests/         # unit + integration tests & eval scripts
+README.md      # you are here
 
-## 3  Quick‑start
 
-Create a fork.
 
-## 4  What we expect
+## 3  Optional, but valuable, LLM boosts
+1. Eligibility → features – parse free-text criteria into JSON with LLMs
+2. Ranking: Embed patient + trial summaries and score via cosine similarity.
+3. Synthetic eval data: Few-shot an LLM to generate labelled fake patients/trials.
+4. Explainability: Have the LLM narrate why each trial was chosen.
+5. Feel free to ignore or modify these; creativity highly encouraged.
 
-| Area                  | Minimum bar                                                          | Stretch ideas (optional)                                                 |
-| --------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| **Correctness**       | Basic match list returned without crashing.                          | Heuristics for trial inclusion/exclusion, genomic filters, geo‑distance. |
-| **Evaluation design** | At least one reproducible metric and ≥3 test cases.                  | Want to see what you come up with here.          |                 |
-| **Communication**     | Inline comments & a short `DECISIONS.md` if you made big trade‑offs. |                         |
 
-## 5  Submission
-1. Push your work to a public GitHub fork (private is fine if you add us as collaborators).
-
-2. Email the link to simone@radicalhealth.ai & bryan@radicalhealth.ai and book a 30‑minute walkthrough call.
-
-3. Total suggested time: ~3 h. It’s OK to leave TODOs; just be explicit. 
+## 4  Submission
+1. Push your work to a private fork, add bryan as a collaborator.
+2. Email the link to bryan@radicalhealth.ai & simone@radicalhealth.ai and book a 30‑minute walkthrough call.
+3. Rough time target ≈ 3 h. It’s OK to leave TODOs, just mark them explicitly. 
 Hint: It's okay to start by focussing on just one cancer type, breast cancer is a great start.
 
 Good luck! We’re excited to see how you think!
