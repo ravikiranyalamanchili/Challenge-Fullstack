@@ -29,7 +29,7 @@ README.md      # you are here
 
 
 ## 3  Optional, but valuable, LLM boosts
-1. Eligibility → features – parse free-text criteria into JSON with LLMs
+1. Eligibility → features, parsing free-text criteria into JSON with LLMs
 2. Ranking: Embed patient + trial summaries and score via cosine similarity.
 3. Synthetic eval data: Few-shot an LLM to generate labelled fake patients/trials.
 4. Explainability: Have the LLM narrate why each trial was chosen.
@@ -38,7 +38,7 @@ README.md      # you are here
 
 ## 4  Submission
 1. Push your work to a private fork, add bryan as a collaborator.
-2. Email the link to bryan@radicalhealth.ai & simone@radicalhealth.ai and book a 30‑minute walkthrough call.
+2. Email the link to bryan@radicalhealth.ai & simone@radicalhealth.ai and book a 45‑minute walkthrough call.
 3. Rough time target ≈ 3 h. It’s OK to leave TODOs, just mark them explicitly. 
 Hint: It's okay to start by focussing on just one cancer type, breast cancer is a great start.
 
