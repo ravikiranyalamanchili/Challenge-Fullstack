@@ -1,0 +1,16 @@
+patient_id,age,gender,cancer_type,stage,biomarkers,location,ecog_status,prior_treatments
+P001,45,Female,Breast Cancer,Stage II,HER2+;ER+,Boston MA,0,"Surgery, Chemotherapy"
+P002,62,Male,Lung Cancer,Stage IIIA,EGFR mutation,Seattle WA,1,"Radiation, Targeted therapy"
+P003,38,Female,Ovarian Cancer,Stage IV,BRCA2,New York NY,1,"Surgery, Chemotherapy, Immunotherapy"
+P004,71,Male,Prostate Cancer,Stage I,,San Francisco CA,0,Surgery
+P005,55,Female,Breast Cancer,Stage III,Triple Negative,Chicago IL,0,"Chemotherapy, Radiation"
+P006,29,Male,Testicular Cancer,Stage II,,Austin TX,0,Chemotherapy
+P007,67,Female,Pancreatic Cancer,Stage IV,KRAS G12C,Phoenix AZ,2,"Chemotherapy, Palliative care"
+P008,52,Male,Bladder Cancer,Stage I,,Denver CO,1,"Surgery, BCG therapy"
+P009,41,Female,Cervical Cancer,Stage II,HPV16+,Miami FL,0,"Radiation, Chemotherapy"
+P010,68,Male,Kidney Cancer,Stage II,,Portland OR,1,Surgery
+P011,34,Female,Thyroid Cancer,Stage I,,Nashville TN,0,Surgery
+P012,76,Male,Lung Cancer,Stage IV,PD-L1 high,Philadelphia PA,2,"Chemotherapy, Immunotherapy"
+P013,49,Female,Breast Cancer,Stage I,HER2-;ER+;PR+,Dallas TX,0,"Surgery, Hormone therapy"
+P014,58,Male,Colorectal Cancer,Stage III,MSI-High,Atlanta GA,0,"Surgery, Chemotherapy"
+P015,31,Female,Sarcoma,Stage IV,MDM2 amplification,Los Angeles CA,1,"Surgery, Chemotherapy, Radiation"
