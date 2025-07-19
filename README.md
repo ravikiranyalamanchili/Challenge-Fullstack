@@ -21,7 +21,7 @@ This is a coding challenge designed to test your ability to turn raw oncology da
 
 ## 2  Repo skeleton
 ```bash
-data/          # patients.csv (add/augment as you like)
+patients.csv   # add/augment as you like
 src/           # your code (language agnostic)
 tests/         # unit + integration tests & eval scripts
 README.md      # you are here
