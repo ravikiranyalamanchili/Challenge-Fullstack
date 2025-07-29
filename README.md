@@ -13,7 +13,7 @@ This is a coding challenge designed to test your ability to turn raw oncology da
 2. **Evaluation & test design (primary deliverable)**: E.g., craft metrics, gold labels or synthetic patients, automated tests, false-negative analysis, etc. 
 3. **Interface**: Expose one simple endpoint or CLI command such that  
      ```bash
-     python match.py --patient_id P002
+     python src/match.py --patient_id P002 --openai_key 'OPENAPI_APIKEY'
      ```  
      returns a ranked list of NCT IDs.
 
@@ -44,3 +44,7 @@ Hint: It's okay to start by focussing on just one cancer type, breast cancer is 
 
 Good luck! We’re excited to see how you think!
 
+## 5 Running Test script
+   ```bash
+     python tests/test_matching.py
+     ``` 
