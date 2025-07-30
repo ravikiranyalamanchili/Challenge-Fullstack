@@ -1,5 +1,5 @@
 pandas>=1.5.0
-openai=0.28.0
+openai==0.28.0
 asyncio
 argparse 
 biomcp-python
